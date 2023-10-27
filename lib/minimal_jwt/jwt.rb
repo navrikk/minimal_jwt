@@ -6,5 +6,7 @@ class Jwt
     _, payload, _ = jwt.split('.')
     decoded_payload = Base64.urlsafe_decode64(payload)
     JSON.parse(decoded_payload).transform_keys(&:to_sym)
+  rescue StandardError => e
+    raise InvalidJwtError.new(e.message)
   end
 end
