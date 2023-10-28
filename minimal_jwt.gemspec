@@ -9,6 +9,6 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^bin/}) { |file| File.basename(file) }
   spec.require_paths = ['lib']
   spec.license = 'MIT'
-  spec.files = %w[lib/minimal_jwt.rb lib/minimal_jwt/jwt.rb]
-  spec.required_ruby_version = '>= 2.5.0'
+  spec.files = Dir['lib/**/*.rb'] + ['README.md']
+  spec.required_ruby_version = '>= 3.1.2'
 end
