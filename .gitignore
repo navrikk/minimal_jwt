@@ -9,5 +9,8 @@
 /dataSources/
 /dataSources.local.xml
 
+# Binary files
+*.gem
+
 # IntelliJ
 .idea
