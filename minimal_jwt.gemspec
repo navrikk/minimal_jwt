@@ -1,3 +1,5 @@
+require_relative "lib/minimal_jwt/version"
+
 Gem::Specification.new do |spec|
   spec.name = 'minimal_jwt'
   spec.version = MinimalJwt::VERSION
