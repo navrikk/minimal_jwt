@@ -1,8 +1,10 @@
-class UnsupportedSigningAlgorithmError < StandardError
-  attr_reader :message
+module MinimalJwt
+  class UnsupportedSigningAlgorithmError < StandardError
+    attr_reader :message
 
-  def initialize(message = '')
-    super
-    @message = message
+    def initialize(message = '')
+      super
+      @message = message
+    end
   end
 end
